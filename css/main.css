@@ -1,0 +1,18 @@
+body{
+    margin: 100px;
+    font-family: sans-serif;
+
+}
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px; /* space after header */
+  }
+  h3 {
+    margin-top: 50px; /* extra space before h2 */
+  }
+
+
+  .btn {
+    margin-top: 20px;  /* space above button */
+  }
