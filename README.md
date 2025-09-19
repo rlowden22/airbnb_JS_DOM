@@ -36,7 +36,7 @@ This project displays the first 51 Airbnb listings from a JSON dataset using **J
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap
+- Bootstrap  add
 
 ## Credits
 - Dataset provided in class (`airbnb_sf_listings500.json `)
