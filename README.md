@@ -8,7 +8,7 @@ Web Dev 5610: Javascript and DOM Self Assessment
 This project displays the first 51 Airbnb listings from a JSON dataset using **JavaScript fetch + async/await** and a responsive **Bootstrap grid**.
 
 ## Features
-- Loads data dynamically from `airbnb_sf_listings500.json `
+- Loads data dynamically from `airbnb_sf_listings_500.json `
 - Shows listing name, description, host, price, and thumbnail
 - Organized in a 3-column responsive layout
 - Custom styling via `css/main.css`
