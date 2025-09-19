@@ -34,6 +34,7 @@ async function loadListings() {
       const hostPic = item.host_picture_url || item.host_thumbnail_url || '';
       const link = item.listing_url || (item.id ? `https://www.airbnb.com/rooms/${item.id}` : '#');
       const amenities = parseAmenities(item.amenities).slice(0, 6); // show top 6
+      const neighborhood = item.neighbourhood_cleansed || "Unknown Area";
 
       const cardHTML = `
         <div class="col">
@@ -44,6 +45,11 @@ async function loadListings() {
                 <h5 class="card-title">${title}</h5>
                 ${price ? `<span class="badge text-bg-primary">${price}</span>` : ''}
               </div>
+
+               <!-- Neighborhood Tag extra addition-->
+              <span class="badge text-bg-info mb-2">${neighborhood}</span>
+
+              ${desc ? `<p class="card-text text-muted truncate-3">${desc}</p>` : ''}
 
               <!-- description contains <br /> in dataset; render as HTML -->
               ${desc ? `<p class="card-text text-muted truncate-3">${desc}</p>` : ''}
