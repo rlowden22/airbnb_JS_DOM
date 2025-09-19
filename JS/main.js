@@ -15,7 +15,7 @@ function parseAmenities(raw) {
 
 async function loadListings() {
   try {
-    const res = await fetch('airbnb_sf_listings_500.json');
+    const res = await fetch('data/airbnb_sf_listings_500.json');
     const data = await res.json();
 
     // If file is an array, use it; if it wraps under .listings, use that
