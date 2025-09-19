@@ -1,12 +1,37 @@
-# airbnb_JS_DOM
-Web Dev 5610: Javascript and DOM Self Assessment
+# Airbnb Listings Demo: JS + Dom Assessment 
 
-## Instructions 
-Starting from the github repository created in class for the AirBNB Listings https://github.com/john-guerra/Airbnb_Listings_demo_page Links to an external site.or your own code built for this, implement a page that displays and loads all the first 50 listings from the JSON file using AJAX (JavaScript fetch and await) as done in class.
+Rowan Lowden  
+Web Dev 5610: Javascript and DOM Self Assessment 
 
-The page should show the listing name, description, amenities, host (name and photo), price, thumbnail, and some creative addition that separates your code from others. Please submit your github repo, and include a meaningful README that links to the deployment location (e.g. github-pages)
+# Project Description
 
-You can use the airbnb_listings2.zip Download airbnb_listings2.zipor watch the class recording for reference
+This project displays the first 51 Airbnb listings from a JSON dataset using **JavaScript fetch + async/await** and a responsive **Bootstrap grid**.
 
-This is a non graded assignment. However, it can be used as a part of the participation grade. I'll probably will randomly call some of you to show your submission during class. You will have to peer-review a class mate submission. If you don't submit this grade or the peer review, you could get negative points in the participation grade
+## Features
+- Loads data dynamically from `airbnb_sf_listings500.json `
+- Shows listing name, description, host, price, and thumbnail
+- Organized in a 3-column responsive layout
+- Custom styling via `css/main.css`
+
+### Creative addition
+- added neighborhood tag to each card
+- set to 51 listings to have 3 columns and 17 rows
+
+## Live Demo
+[View on GitHub Pages](https://rlowden22.github.io/airbnb_JS_DOM/)
+
+## Project Structure
+
+- index.html # Main page
+- css/main.css # styling page
+- js/main.js # JavaScript fetch + async/await
+- data/airbnb_sf_listings500.json # Dataset
+
+## Run Locally
+1. Clone the repo
+2. Start a local server
+3. Open `index.html`
+
+## Credits
+- Dataset provided in class (`airbnb_sf_listings500.json `)
 
