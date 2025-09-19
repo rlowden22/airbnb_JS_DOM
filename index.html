@@ -1,120 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbnb JS/Bootstrap Practice </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Francisco Airbnbs</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous"/>
+  />
 
-    <link  rel="stylesheet" href="css/main.css"/>
-    
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body>
+
+  <header class="py-4 text-center">
     <h1>San Francisco Airbnbs</h1>
+    <p class="text-muted mb-0">First 50 listings loaded via fetch + async/await</p>
+  </header>
 
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <!-- NUMBER 1 958-->
-    <section>
-    <h3>Serviced apartment in San Francisco</h3>
+  <main class="container pb-5">
+    <!-- GRID TARGET -->
+    <div id="grid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+  </main>
 
-    <img src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-    alt=" thumbnail image for serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2 beds · 1 bath"
-    width="300px"
-    />
-    <div class="short description">Serviced apartment in San Francisco  · 1 bedroom · 2 beds · 1 bath</div>
-    <div class=" average rating">★4.87</div>
-    <div class= "host"> By Holly</div>
-    <div class="price"> $187.00</div>
-    <div class="description"> Our bright garden unit overlooks a lovely backyard area with fruit trees and
-         native plants. It is an oasis in a big city. The apartment comfortably fits a couple or small family. 
-         It is located on a cul de sac street that ends at lovely Duboce Park.
-         <br /><br /><b>The space</b><br />Newly remodeled, modern, and bright garden unit in historic Victorian
-          home. <br /><br />New fixtures and finishes.<br />Zero VOC and non-toxic paint.<br />
-          Organic and fair-trade teas, fresh local ground coffee.<br />Local art on walls.<br />
-          Sofa bed and Queen bed are in the same room. More of a petite apartment with a separate room for 
-          dining and kitchen.<br /><br /><b>Guest access</b><br />Full access to patio and backyard (Shared)
-          <br />Beautiful garden with fruit trees & native plants <br />Washer & dryer (Shared)<br />
-          Children's toys<br />Charcoal grill<br /><br /><b>Other things to note</b><br />
-          Due to the fact that we have children and a dog, we are up early 7-8am and their footsteps or paws can be heard </div>
+  <footer class="text-center py-4">
+    <p class="mb-0">&copy; 2025 By Rowan. All rights reserved.</p>
+  </footer>
 
-    <a href=" https://www.airbnb.com/rooms/958" target="_blank">
-    <button type="button" class="btn btn-primary">Book Now</button>
-    </a>
-    </section>
-    </div>
-    <div class="col">
-       <!-- NUMBER 2 id 8339-->
-    <section>
-    <h3>Rental unit in San Francisco </h3>
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <img src="https://a0.muscache.com/pictures/miso/Hosting-8339/original/36055015-2652-422e-b84b-66df0ea4b23b.jpeg"
-    alt=" thumbnail image for Rental unit in San Francisco · ★4.88 · 2 bedrooms · 2 beds · 2 baths"
-    width="300px"
-    />
-    <div class="short description">Rental unit in San Francisco · 2 bedrooms · 2 beds · 2 baths</div>
-    <div class=" average rating">★4.88</div>
-    <div class= "host"> By Rosy</div>
-    <div class="price"> $480.00</div>
-    <div class="description"> Pls email before booking. <br />Interior featured in magazines. Listed historic with the City of SF. Steps away from
-         the iconic Alamo Square \"Painted Ladies\".<br /><br /><b>The space</b><br />Please send us a quick message before booking :) <br /><br 
-         />Victorian flat in Queen Ann Victorian. <br /><br />Interior featured in magazines. Listed historic with the City of San Francisco.
-          Steps away from the iconic Alamo Square \"Painted Ladies\" postcard panorama. <br /><br /><br />Tour buses pause.<br /> 
-          This spacious sunny apartment is well known by local photographers for its ambiance and beautiful natural light. 
-          (Rental does not imply permission for commercial photography use) <br /><br />Centrally located close to public transport, 
-          top restaurants, shops, arts and entertainment near NOPA/Alamo square/Haight/Hayes. 2 blocks away from public transpo.<br />
-        Safe walkable neighborhood. <br /><br />Authentic Updated Victorian experience. </div>
-
-        <a href="https://www.airbnb.com/rooms/8339" target="_blank">
-    <button type="button" class="btn btn-primary">Book Now</button>
-    </a>
-    </section>
-
-    </div>
-    <div class="col">
-    <!-- NUMBER 3 id 8739-->
-    <section>
-    <h2>Condo in San Francisco</h2>
-
-    <img src="https://a0.muscache.com/pictures/80811/7a57d0e7_original.jpg"
-    alt=" thumbnail image for serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2 beds · 1 bath"
-    width="300px"
-    />
-    
-    <div class="short description">Condo in San Francisco · 1 bedroom · 1 bed · 1 private bath</div>
-    <div class=" average rating">★4.92</div>
-    <div class= "host"> By Ivan & Wendy</div>
-    <div class="price"> $122.00</div>
-    <div class="description"> Welcome to "The Mission," the sunniest neighborhood in town. Enjoy world-class dining, shopping, and nightlife on Valencia, 
-        or a Tartine picnic in Dolores Park, all just steps from our 100 year old home. <br />We've been Hosts since Airbnb's 1st year (2009), and can suggest
-         restaurants or insider sight-seeing ideas. We love our home, our hometown, and our neighborhood, and we look forward to sharing them with you.<br />
-         PLEASE click below to read more about this private room and bath in a shared home.<br /><br /><b>The space</b><br />Your sunny room looks out over 
-         a lush garden, and includes all the comforts of home... Queen bed, sofa, dresser, closet, and a rocking chair. <br /><br />Just up the hall, your
-         private bathroom has a \"like rain\" shower head over a clawfoot tub. (The bathroom is not \"en-suite.\")<br /><br />For a third guest (or for 
-        two guests who want separate beds) there is a full second bedroom available. ($60/night, and only available if you book Mission Sunshine.)<br /> </div>
-    
-    </section>
-
-    <a href="https://www.airbnb.com/rooms/8739" target="_blank">
-    <button type="button" class="btn btn-primary">Book Now</button>
-    </a>
-
-    </div>
-  </div>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-    crossorigin="anonymous"></script>
-
-    <footer>
-        <p>&copy; 2025 By Rowan. All rights reserved.</p>
-    </footer>
+  <!--  JS file  -->
+  <script src="js/main.js"></script>
 </body>
 </html>

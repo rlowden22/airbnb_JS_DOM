@@ -9,3 +9,4 @@ The page should show the listing name, description, amenities, host (name and ph
 You can use the airbnb_listings2.zip Download airbnb_listings2.zipor watch the class recording for reference
 
 This is a non graded assignment. However, it can be used as a part of the participation grade. I'll probably will randomly call some of you to show your submission during class. You will have to peer-review a class mate submission. If you don't submit this grade or the peer review, you could get negative points in the participation grade
+
