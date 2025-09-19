@@ -32,12 +32,14 @@ This project displays the first 51 Airbnb listings from a JSON dataset using **J
 2. Start a local server
 3. Open `index.html`
 
-## Tech Stack
+## Tech Used
 - HTML5
 - CSS3
-- JavaScript
-- Bootstrap  add
+- Vanilla JavaScript ES6+
+- Bootstrap 5
+- Fetch API (AJAX) loading from JSON
+- Github Pages
 
 ## Credits
-- Dataset provided in class (`airbnb_sf_listings500.json `)
+- Dataset provided in class (`airbnb_sf_listings_500.json `)
 

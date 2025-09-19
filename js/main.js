@@ -1,6 +1,6 @@
 
 
-// Parse amenities: dataset stores it as a JSON string (e.g. "[\"Kitchen\", ...]")
+// Parse amenities
 function parseAmenities(raw) {
   if (!raw) return [];
   try {
@@ -34,7 +34,7 @@ async function loadListings() {
       const hostPic = item.host_picture_url || item.host_thumbnail_url || '';
       const link = item.listing_url || (item.id ? `https://www.airbnb.com/rooms/${item.id}` : '#');
       const amenities = parseAmenities(item.amenities).slice(0, 6); // show top 6
-      const neighborhood = item.neighbourhood_cleansed || "Unknown Area";
+      const neighborhood = item.neighbourhood_cleansed || "Unknown Area"; //creative add!
 
       const cardHTML = `
         <div class="col">
@@ -80,7 +80,7 @@ async function loadListings() {
         <div class="alert alert-danger">Failed to load listings. Check JSON path/format.</div>
       </div>`;
   }
-} //update
+}
 
 // Run on load
 loadListings();
