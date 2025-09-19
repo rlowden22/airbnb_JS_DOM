@@ -80,7 +80,7 @@ async function loadListings() {
         <div class="alert alert-danger">Failed to load listings. Check JSON path/format.</div>
       </div>`;
   }
-}
+} //update
 
 // Run on load
 loadListings();
